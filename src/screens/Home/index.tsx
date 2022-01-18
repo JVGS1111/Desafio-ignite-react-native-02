@@ -43,7 +43,7 @@ export function Home() {
   function handleFilterLoginData() {
     // Filter results inside data, save with setSearchListData
     if (!searchText) {
-      loadData();
+      setSearchListData(data);
       return
     }
     const newData = data.filter((obj) => {
